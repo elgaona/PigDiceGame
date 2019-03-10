@@ -78,12 +78,11 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
        document.querySelector('#current-1').textContent = 0;
        document.querySelector('.dice').style.display = 'none';
    } 
-    if(score[0] >= 100) {
+    if(score[0] >= 10) {
     document.querySelector('#name-0').textContent = 'Winner!';
     document.querySelector('.dice').style.display = 'none';
     document.querySelector('.player-1-panel').classList.remove('active');
-} else if(score[1] >= 100){
-    alert('Winner Player 2');
+} else if(score[1] >= 10){
     document.querySelector('#name-1').textContent = 'Winner!';
     document.querySelector('.dice').style.display = 'none';
     document.querySelector('.player-0-panel').classList.remove('active');
