@@ -78,13 +78,13 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
        document.querySelector('#current-1').textContent = 0;
        document.querySelector('.dice').style.display = 'none';
    } 
-    if(score[0] >= 10) {
+    if(score[0] >= 100) {
     document.querySelector('#name-0').textContent = 'Winner!';
     document.querySelector('.dice').style.display = 'none';
     document.querySelector('.player-1-panel').classList.remove('active');
     document.querySelector('.player-0-panel').classList.add('winner');
     gamePlaying = false;
-} else if(score[1] >= 10){
+} else if(score[1] >= 100){
     document.querySelector('#name-1').textContent = 'Winner!';
     document.querySelector('.dice').style.display = 'none';
     document.querySelector('.player-0-panel').classList.remove('active');
